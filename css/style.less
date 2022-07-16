@@ -1,0 +1,217 @@
+@import "var";
+@import "button";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-family: 'Noto Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.Htag {
+	color: @primary;
+	font-style: normal;
+	line-height: 60px;
+	font-size: 30px;
+}
+
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+	margin-top: 120px;
+	margin-bottom: 40px;
+}
+
+.slider_inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/* ---- BLOCK ----  */
+.block {
+	width: 260px;
+	height: 420px;
+	border: 1px solid @blue-light;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+
+.blockActive {
+	width: 260px;
+	height: 420px;
+	border: 1px solid @primary;
+	transition: 0.5s;
+}
+
+.block_inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.images {
+	margin: 20px 20px 0px 20px;
+}
+
+.date {
+	margin: 10px 0px 10px 20px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 22px;
+	color: @primary;
+	opacity: 0.6;
+}
+
+.title {
+	margin: 10px 0px 10px 20px;
+}
+
+.text_title {
+	color: @primary;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.text_description {
+	margin: 10px 20px 22px 20px;
+	color: @primary;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 22px;
+
+}
+
+/* ---- PROGRESS LINE ----  */
+.wrapper {
+	max-width: 360px;
+	width: 100%;
+}
+
+.progress_line {
+	background-color: @blue-light;
+	bottom: 0;
+	color: @primary;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.progress_line-bg {
+	background-color: #ccc;
+	height: 3px;
+	overflow: hidden;
+	position: relative;
+	width: 100%; 
+}
+
+
+/* ---- MEDIA ----  */
+@media screen and (max-width: 440px) {
+
+.container {
+	width: 400px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.Htag {
+  	font-size: 14px;
+}
+
+.wrapper {
+  	width: 100px;
+}
+
+.btn {
+  	width: 30px;
+  	height: 30px;
+  	margin-right: 10px;	
+}
+
+.slider_inner {
+	justify-content: space-evenly;
+}
+
+.block {
+	width: 300px;
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+.images {
+	width: 260px;
+	height: 150px;
+	margin: 10px 10px;
+}
+
+.text_title {
+	font-size: 12px;
+	line-height: 26px;
+}
+
+.text_description {
+	margin: 5px 10px 12px 10px;
+	font-size: 12px;
+	line-height: 15px;
+
+}
+
+.blockActive {
+	width: 300px;
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+.block_inner {
+	flex-direction: column;
+	align-items: center;
+}
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+.btn {
+  	width: 20px;
+  	height: 20px;
+  	margin-right: 5px;	
+}
+
+.Htag {
+  	font-size: 12px;
+}
+
+
+.icon {
+	width: 7px;
+}
+
+.block {
+	width: 300px;
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+.blockActive {
+	width: 300px;
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+.images {
+	width: 260px;
+	height: 150px;
+	margin: 10px 10px;
+}
+
+}
